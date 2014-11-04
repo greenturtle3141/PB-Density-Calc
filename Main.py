@@ -1,6 +1,6 @@
 import imager
  
-print 'Loading Herobrine...'
+print 'Load Paintball Map...'
 picture = imager.load_image('fixedhero.png')
 print 'Loading Rainbow...'
 rainbow = imager.load_image('rainbow.png')
@@ -32,5 +32,5 @@ for rowNum, row in enumerate(picture):
         color = (density[rowNum][pixNum]) * 1019 / 7854
         picture[rowNum][pixNum] = rainbow[0][color]
  
-print 'Saving...'       
-imager.save_image('theherobrinerainbow3.png', picture)
+print 'Opening Picture...'       
+imager.show_image(picture)
